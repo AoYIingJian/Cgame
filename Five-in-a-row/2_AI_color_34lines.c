@@ -1,7 +1,11 @@
 #include <windows.h>
 #include <conio.h>
 #include <stdio.h>
-int W = 13, S, M = 0, *m, c = 1, r = 2, z, i, j, k, *p;
+
+
+
+
+int W = 13, S, M = 0, *m, c = 1, r = 2, z, i, j, k, *p,jiji;
 int *sum(int *v, int l) { return *v - v[l] ? v + l : sum(v + l, l); }
 void down(int v) {
 	for (m[v] = r ^= 3, i = 2; j = i % 3 - 1 + i / 3 * W, i < 6; ++i) {
